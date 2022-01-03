@@ -79,9 +79,9 @@ header {
 
 .chevron-icon {
   display: block;
-  position: relative;
-  bottom: -2rem;
+  padding-top: 1rem;
   margin: 0 auto;
+  width: 4rem;
 }
 
 header h1 {
@@ -265,9 +265,8 @@ footer img {
 
 /* Media Queries */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   header {
-    height: 60rem;
   }
   
   #h-icon {
@@ -277,10 +276,8 @@ footer img {
   }
 
   .chevron-icon {
-    display: block;
-    position: relative;
-    bottom: -2rem;
-    margin: 0 auto;
+    width: 3rem;
+    padding-top: 0.6rem;
   }
 
   header h1 {
@@ -341,7 +338,7 @@ footer img {
   }
 }
 
-
+/*
 @media only screen and (min-width: 601px) and (max-width: 1024px) and (orientation: portrait) {
   #h-icon {
     width: 200px;
@@ -370,7 +367,6 @@ footer img {
     text-align: center;
   }
   
-  /* Section */
   section {
     padding: 20px 3rem 0 3rem;
     margin-bottom: 8rem;
@@ -431,3 +427,4 @@ footer img {
     text-align: center;
   }
 }
+*/
