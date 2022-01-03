@@ -49,19 +49,23 @@ table {
 /* End Reset */
 
 
+body {
+  background-color: #f0f0f0;
+}
 
 h1 {
-  color: white;
+  color: #f0f0f0;
 }
 
 .tag-line {
-  color: white;
+  color: #f0f0f0;
 }
 
 header {
   background-image: linear-gradient(rgba(16, 12, 28, 0.5), rgba(0, 0, 0, 0.55)), url("../images/banner.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: local;
   height: 100vh;
 }
 
@@ -69,6 +73,13 @@ header {
   width: 280px;
   height: 280px;
   padding: 6rem 0 0 2rem;
+}
+
+.ionicon {
+  display: block;
+  position: relative;
+  bottom: -2rem;
+  margin: 0 auto;
 }
 
 header h1 {
@@ -83,4 +94,165 @@ header h3 {
   font-weight: 500;
   font-size: 2.3rem;
   padding: 0.75rem 0 0 2.8rem;
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+}
+
+p.intro {
+  font-family: "Helvetica", sans-serif;
+  font-weight: 100;
+  font-size: 2.0rem;
+  color: #f0f0f0;
+  margin-top: 14rem;
+}
+
+section {
+  padding: 80px 12rem 0 12rem;
+  margin-bottom: 10rem;
+}
+
+section li {
+  color: #333;
+  font-family: "Helvetica", sans-serif;
+  font-weight: 100;
+  font-size: 1.8rem;
+}
+
+.section-gallery {
+  margin-top: 8rem;
+}
+
+.section-icon {
+  width: 4rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.section-desc {
+  color: #333;
+  font-family: "Helvetica", sans-serif;
+  font-weight: 100;
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.gallery-showcase {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:  wrap;
+  list-style: none;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.gallery-showcase li {
+  width: 25%;
+  height: auto;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.gallery-image img {
+  opacity: 0.6;
+  width: 100%;
+  height: auto;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+          transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.gallery-image img:hover {
+  -webkit-transform: scale(1.08);
+      -ms-transform: scale(1.08);
+          transform: scale(1.08);
+  opacity: 1;
+}
+
+.section-technology ul {
+  height: 8rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: start;
+}
+
+footer {
+  background-color: #333;
+  padding: 30px 0 40px 0;
+}
+
+.contact-email {
+  margin-left: 2.8rem;
+}
+
+.contact-social-container {
+  margin-top: 0.8rem;
+  margin-left: 2.8rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+.copy {
+  color: #f0f0f0;
+  font-family: "Helvetica", sans-serif;
+  font-weight: 100;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+footer img {
+  width: 2rem;
+}
+
+.contact-github img {
+  width: 2.3rem;
+}
+
+.contact-email span {
+  color: #f0f0f0;
+  font-family: "Helvetica", sans-serif;
+  font-weight: 100;
+  font-size: 1.0rem;
+  margin-left: 0.5rem;
+  position: relative;
+  bottom: 0.5rem;
+}
+
+.contact-github {
+}
+
+.contact-linkedin {
+  padding-top: 0.2rem;
+}
+
+.contact-vimeo {
+  padding-top: 0.3rem;
+}
+
+.contact-social-container :not(:last-child) {
+  margin-right: 1.5rem;
 }
