@@ -208,7 +208,7 @@ section li {
 
 footer {
   background-color: #333;
-  padding: 30px 0 40px 0;
+  padding: 30px 0 30px 0;
 }
 
 .contact-email {
@@ -285,7 +285,7 @@ footer img {
   header h1 {
     font-family: "Helvetica", sans-serif;
     font-weight: bold;
-    font-size: 1.28rem;
+    font-size: 1.3rem;
     padding: 0.5rem 0 0 2.8rem;
   }
 
@@ -335,18 +335,23 @@ footer img {
     font-weight: 100;
     font-size: 1.2rem;
   }
+
+  .copy {
+    font-size: 0.6rem;
+  }
 }
 
 @media only screen and (max-width: 768px) and (orientation: landscape) {
   #h-icon {
     width: 100px;
     height: 100px;
+    padding: 4rem 0 0 2.8rem;
   }
 
   header h1 {
     font-family: "Helvetica", sans-serif;
     font-weight: bold;
-    font-size: 1.28rem;
+    font-size: 1.3rem;
     padding: 0.5rem 0 0 2.8rem;
   }
 
@@ -359,7 +364,7 @@ footer img {
 
   p.intro {
     font-size: 1.2rem;
-    margin-top: 12rem;
+    margin-top: 6rem;
     padding: 0 2.8rem;
     text-align: center;
   }
@@ -394,5 +399,9 @@ footer img {
     font-family: "Helvetica", sans-serif;
     font-weight: 100;
     font-size: 1.2rem;
+  }
+
+  .copy {
+    font-size: 0.6rem;
   }
 }
