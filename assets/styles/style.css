@@ -48,6 +48,9 @@ table {
 }
 /* End Reset */
 
+html {
+  font-size: 16px;
+}
 
 body {
   background-color: #f0f0f0;
@@ -265,13 +268,11 @@ footer img {
 
 /* Media Queries */
 
-@media only screen and (max-width: 768px) {
-  header {
-  }
+@media only screen (min-width: 732px) and (orientation: portrait) {
   
   #h-icon {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     padding: 6rem 0 0 2rem;
   }
 
@@ -283,19 +284,19 @@ footer img {
   header h1 {
     font-family: "Helvetica", sans-serif;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 1rem;
     padding: 0.5rem 0 0 2.8rem;
   }
 
   header h3 {
     font-family: "Helvetica", sans-serif;
     font-weight: 500;
-    font-size: 1.73rem;
+    font-size: 0.73rem;
     padding: 0.75rem 0 0 2.8rem;
   }
 
   p.intro {
-    font-size: 1.3rem;
+    font-size: 1.0rem;
     margin-top: 14rem;
     padding: 0 2.8rem;
     text-align: center;
@@ -338,93 +339,3 @@ footer img {
   }
 }
 
-/*
-@media only screen and (min-width: 601px) and (max-width: 1024px) and (orientation: portrait) {
-  #h-icon {
-    width: 200px;
-    height: 200px;
-    padding: 6rem 0 0 2rem;
-  }
-
-  header h1 {
-    font-family: "Helvetica", sans-serif;
-    font-weight: bold;
-    font-size: 3rem;
-    padding: 0.5rem 0 0 2.8rem;
-  }
-
-  header h3 {
-    font-family: "Helvetica", sans-serif;
-    font-weight: 500;
-    font-size: 1.73rem;
-    padding: 0.75rem 0 0 2.8rem;
-  }
-
-  p.intro {
-    font-size: 1.8rem;
-    margin-top: 22rem;
-    padding: 0 2.8rem;
-    text-align: center;
-  }
-  
-  section {
-    padding: 20px 3rem 0 3rem;
-    margin-bottom: 8rem;
-  }
-
-  .section-gallery {
-    margin-top: 4rem;
-  }
-
-  .section-icon {
-    width: 3rem;
-    display: block;
-    margin: 0 auto;
-  }
-
-  .section-desc {
-    color: #333;
-    font-family: "Helvetica", sans-serif;
-    font-weight: 400;
-    font-size: 1.4rem;
-    text-align: center;
-    margin: 1rem 0 3rem 0;
-  }
-
-  section li {
-    color: #333;
-    font-family: "Helvetica", sans-serif;
-    font-weight: 100;
-    font-size: 1.2rem;
-  }
-}
-
-@media only screen and (min-width: 601px) and (max-width: 1024px) and (orientation: landscape) {
-  #h-icon {
-    width: 200px;
-    height: 200px;
-    padding: 6rem 0 0 2rem;
-  }
-
-  header h1 {
-    font-family: "Helvetica", sans-serif;
-    font-weight: bold;
-    font-size: 3rem;
-    padding: 0.5rem 0 0 2.8rem;
-  }
-
-  header h3 {
-    font-family: "Helvetica", sans-serif;
-    font-weight: 500;
-    font-size: 1.73rem;
-    padding: 0.75rem 0 0 2.8rem;
-  }
-
-  p.intro {
-    font-size: 1.8rem;
-    margin-top: 16;
-    padding: 0 2.8rem;
-    text-align: center;
-  }
-}
-*/
