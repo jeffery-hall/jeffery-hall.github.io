@@ -21,7 +21,7 @@
       <div class="intro-container">
         <p class="intro">Hello, I'm Jeff and I make stuff with code and pixels.</p>
       </div>
-      <img class="chevron-icon" src="assets/images/chevron-down-outline.svg" alt="down">
+      <img class="chevron-icon" id="scroll-btn" src="assets/images/chevron-down-outline.svg" alt="down">
       <!--
         <svg xmlns="http://www.w3.org/2000/svg" class="chevron-icon" width="5%" height="5%" viewBox="0 0 512 512">
           <title>Chevron Down</title>
@@ -30,7 +30,7 @@
       -->
     </header>
 
-    <section class="section-gallery">
+    <section class="section-gallery" id="gallery">
       <img class="section-icon" src="assets/images/construct-outline.svg" alt="Work Samples">
       <p class="section-desc">A few samples of my work. Click to view larger.</p>
       <ul class="gallery-showcase">
@@ -155,6 +155,11 @@
       <p class="copy">Copyright &copy; 2021 J. W. Hall | Tampa Bay Based Software Developer & Designer </p>
     </footer>
     <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+    <script>
+      document.getElementById("scroll-btn").addEventListener("click", function() {
+              document.getElementById("gallery").scrollIntoView({behavior: "smooth", });
+            });
+    </script>
   </body>
 </html>
 
